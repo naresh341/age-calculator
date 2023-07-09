@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;900&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div id="layout">
+      <div class="upper-layout">
+        <div class="day">
+          Day
+          <input type="text" placeholder="DD" id="day" />
+          <small class="error-day"></small>
+        </div>
+
+        <div class="month">
+          Month
+          <input type="text" placeholder="MM" id="month" />
+          <small class="error-month"></small>
+        </div>
+
+        <div class="year">
+          Year
+          <input type="text" placeholder="YYYY" id="year" />
+          <small id="error-year"></small>
+        </div>
+      </div>
+      <hr />
+      <button class="submit-btn" type="submit">
+        <img src="icon-arrow.svg" alt="arrow" />
+      </button>
+
+      <div class="lower">
+        <div class="output">
+          <h1><span class="output-year">--</span>years</h1>
+          <h1><span class="output-month">--</span>months</h1>
+          <h1><span class="output-day">--</span>days</h1>
+        </div>
+      </div>
+    </div>
+    <script src="agecal.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Naresh</a>.
+    </div>
+  </body>
+</html>

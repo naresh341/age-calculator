@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+body {
+  background-color: rgba(239, 232, 232, 0.863);
+}
+
+#layout {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 38rem;
+  width: 43rem;
+  transform: translate(19rem, 14px);
+  margin: -1px;
+  border-radius: 22px;
+  border-bottom-right-radius: 121px;
+}
+input {
+  height: 4rem;
+  width: 8.2rem;
+  margin: 8px 30px 11px 3px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+.upper-layout {
+  display: flex;
+  margin: -130px 0px 0px 25px;
+  transform: translate(9px, -25px);
+  color: #aca1a1;
+}
+small {
+  color: red;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+}
+.month {
+  display: flex;
+  flex-direction: column;
+}
+.year {
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  width: 32rem;
+  transform: translate(44px, -10px);
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  padding: 13px;
+  background: blueviolet;
+  transform: translate(35rem, -3rem);
+  border: none;
+}
+
+.output span {
+  margin: 0px 34px 0px 34px;
+  font-size: 2.75rem;
+  color: rgb(202, 66, 202);
+  font-style: italic;
+}
+
+@media (max-width: 320px) {
+  body {
+    background-color: rgba(239, 232, 232, 0.863);
+  }
+  #layout {
+    background-color: white;
+    height: 38rem;
+    width: 28rem;
+    transform: translate(1rem, 1rem);
+  }
+  .upper-layout {
+    margin: 0px 0px 0px 25px;
+    transform: translate(4px, -100px);
+  }
+  input {
+    height: 3rem;
+    width: 5.2rem;
+  }
+  hr {
+    width: 24rem;
+    transform: translate(30px, -37px);
+  }
+
+  .submit-btn {
+    transform: translate(11.5rem, -5rem);
+  }
+
+  .attribution {
+    transform: translate(12rem, 89px);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1250px) {
+  #layout {
+    height: 31rem;
+    transform: translate(15rem, 14px);
+  }
+  input {
+    height: 4rem;
+    width: 8.2rem;
+    margin: 8px 30px 11px 3px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
+  .upper-layout {
+    transform: translate(9px, 27px);
+  }
+
+  .submit-btn {
+    transform: translate(33.5rem, 0.4rem);
+  }
+  hr {
+    width: 31rem;
+    transform: translate(31px, 50px);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
